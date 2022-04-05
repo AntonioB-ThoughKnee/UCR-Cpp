@@ -11,7 +11,7 @@ void p2_efficiency(float miles, float gallons)
 void p3_height(float feet, float inches)
 {
 	float result = inches*2.54 + feet*30.48;
-	std::cout <<"inches= "<< inches <<",  feet="<< feet ;
+	std::cout << inch << " inches and " << feet << " feet equals " << result << " cm\n";
 
 }
 
