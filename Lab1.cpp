@@ -4,9 +4,31 @@ using namespace std;
 void problema1(double primerMasa, double segundaMasa){
     double tension = (2*primerMasa*segundaMasa);
     tension = tension/(primerMasa+segundaMasa)*(9.8); 
-    cout << "La tensión es de: " + to_string(tension) << endl;
+    cout << "La tensión de la cuerda es de: " + to_string(tension) << endl;
 }
 
+void p2_efficiency(float miles, float gallons)
+{
+	float efficiency = miles/gallons;
+	float l_every_hundred_km = (gallons*3.785 / (miles*1.609344)) * 100;
+	std::cout <<"efficiency is "<<efficiency<<"mi/gal, equal to "
+	<<l_every_hundred_km<<"l /km\n";
+}
+
+void p3_height(float feet, float inches)
+{
+	float result = inches*2.54 + feet*30.48;
+	std::cout << inches << " inches and " << feet 
+	<< " feet equals " << result << " cm\n";
+
+}
+
+void p4_british(float p, float c, int l)
+{
+	float result = (c/20) + (p/240) + l/1;
+	std::cout <<p<<" d(peniques) "<<c<<" s(cheniques) "<<l
+	<<" l(libras) equals to "<<result<< "l in today's money system\n";
+}
 
 float myRrandom(int a, int b){
   srand(time(0));
@@ -16,7 +38,8 @@ float myRrandom(int a, int b){
 void problema5(int a, int b){
  
     double pregunta = myRrandom(a,b);
-    cout << to_string(pregunta) << endl;
+    cout << "Un número al azar entre " + to_string(a) +
+    " y " + to_string(b) + " es: " + to_string(pregunta) << endl;
 }
 
 void problema6(int numero){
@@ -54,8 +77,17 @@ void problema6(int numero){
 }
 
 int main(){
-    cout << "Problema 1:" <<endl;
+    cout << "Problema 1:" << endl;
     problema1(5,9);
+
+    cout << "\nProblema 2:" << endl;
+    p2_efficiency(394.5707, 15.059444);
+
+    cout << "\nProblema 3:" << endl;
+	p3_height(6, 5);
+
+    cout << "\nProblema 4:" << endl;
+	p4_british(6, 10, 20);
 
     cout << "\nProblema 5:" << endl;
     problema5(5,10);
