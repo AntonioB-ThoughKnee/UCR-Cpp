@@ -7,6 +7,18 @@ void problema1(double primerMasa, double segundaMasa){
     cout << "La tensión es de: " + to_string(tension) << endl;
 }
 
+
+float myRrandom(int a, int b){
+  srand(time(0));
+  return a + static_cast <float> (rand()) / static_cast <float> (RAND_MAX/(b-a));
+}
+
+void problema5(int a, int b){
+ 
+    double pregunta = myRrandom(a,b);
+    cout << to_string(pregunta) << endl;
+}
+
 void problema6(int numero){
     string lista = "";
     int numeroPrimo = 2;
@@ -45,6 +57,10 @@ int main(){
     cout << "Problema 1:" <<endl;
     problema1(5,9);
 
+    cout << "\nProblema 5:" << endl;
+    problema5(5,10);
+
     cout << "\nProblema 6:" << endl;
     problema6(5);
+
 }
