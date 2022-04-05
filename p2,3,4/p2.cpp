@@ -2,8 +2,10 @@
 
 void p2_efficiency(float miles, float gallons)
 {
-	float efficiency
-	float l_100km 
+	float efficiency = miles/gallons;
+	float l_every_hundred_km =
+	std::cout <<"efficiency is "<<efficiency<<"mi/gal, equal to "
+	<<l_every_hundred_km<<"l /km\n";;
 }
 
 
