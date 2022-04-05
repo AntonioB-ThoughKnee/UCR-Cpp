@@ -11,15 +11,15 @@ void p2_efficiency(float miles, float gallons)
 {
 	float efficiency = miles/gallons;
 	float l_every_hundred_km = (gallons*3.785 / (miles*1.609344)) * 100;
-	std::cout <<"efficiency is "<<efficiency<<"mi/gal, equal to "
+	std::cout <<"La eficiencia es "<<efficiency<<"mi/gal, igual a "
 	<<l_every_hundred_km<<"l /km\n";
 }
 
 void p3_height(float feet, float inches)
 {
 	float result = inches*2.54 + feet*30.48;
-	std::cout << inches << " inches and " << feet 
-	<< " feet equals " << result << " cm\n";
+	std::cout << inches << "  pulgadas  y " << feet 
+	<< "  pies es igual a " << result << " cm\n";
 
 }
 
@@ -27,7 +27,7 @@ void p4_british(float p, float c, int l)
 {
 	float result = (c/20) + (p/240) + l/1;
 	std::cout <<p<<" d(peniques) "<<c<<" s(cheniques) "<<l
-	<<" l(libras) equals to "<<result<< "l in today's money system\n";
+	<<" l(libras) es igual a "<<result<< "l en el sistema monetario actual\n";
 }
 
 float myRrandom(int a, int b){
