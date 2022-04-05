@@ -11,15 +11,16 @@ void p2_efficiency(float miles, float gallons)
 void p3_height(float feet, float inches)
 {
 	float result = inches*2.54 + feet*30.48;
-	std::cout << inches << " inches and " << feet << " feet equals " << result << " cm\n";
+	std::cout << inches << " inches and " << feet 
+	<< " feet equals " << result << " cm\n";
 
 }
 
 void p4_british(float p, float c, int l)
 {
 	float result = (c/20) + (p/240) + l/1;
-	std::cout << "p="<<p<<", c = "<<c<<", l = "
-	<<l<<",  result = "<< result;
+	std::cout <<p<<" d(peniques) "<<c<<" s(cheniques) "<<l
+	<<" l(libras) equals to "<<result<< "l in today's money system\n";
 }
 
 
@@ -30,5 +31,7 @@ int main()
 	p4_british(6, 10, 20);
 	return 0;
 }
+
+
 
 
