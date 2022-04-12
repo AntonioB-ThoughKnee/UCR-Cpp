@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "numbers": "cpp"
+    },
+    "editor.fontLigatures": false,
+    "editor.mouseWheelZoom": true
+}
